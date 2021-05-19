@@ -12,7 +12,7 @@ function convertFahrToCelsius(fahr){
    }
 
   //Checking input data types and returning values
-  if(isNaN(fahr) ||  checkIt(fahr) === 'boolean' || checkIt(fahr) === 'null' || fahr === ""){
+  if(isNaN(fahr) ||  checkIt(fahr) === 'boolean' || checkIt(fahr) === 'null' || fahr === ""|| checkIt(fahr) === 'array'){
       return `${JSON.stringify(fahr)} is not a valid number but a/an ${checkIt(fahr)}.`
     } else {
       return celsius
