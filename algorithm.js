@@ -2,7 +2,7 @@
 
 function convertFahrToCelsius(fahr){
   //converting fahr to celcius
-   let celcius = Number(((fahr - 32) * 5/9).toFixed(4));
+   let celsius = Number(((fahr - 32) * 5/9).toFixed(4));
 
   //Determine input data types
    checkIt=(value)=>{
@@ -15,7 +15,7 @@ function convertFahrToCelsius(fahr){
   if(isNaN(fahr) ||  checkIt(fahr) === 'boolean' || checkIt(fahr) === 'null' || fahr === ""){
       return `${JSON.stringify(fahr)} is not a valid number but a/an ${checkIt(fahr)}.`
     } else {
-      return celcius
+      return celsius
     }
 
  }
@@ -79,6 +79,7 @@ function convertFahrToCelsius(fahr){
             item
           }
             return item;
+
         })
         return transformedArray
     }
@@ -90,7 +91,7 @@ function convertFahrToCelsius(fahr){
     console.log(checkYuGiOh("30"))
     console.log(checkYuGiOh())
     console.log(checkYuGiOh("fizzbuzz is meh"))
-    console.log(checkYuGiOh(5))
+    console.log(checkYuGiOh(6))
     console.log(checkYuGiOh(0))
     console.log(checkYuGiOh(null))
     console.log(checkYuGiOh('10px'))
